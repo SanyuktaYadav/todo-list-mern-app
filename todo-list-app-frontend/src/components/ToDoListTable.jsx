@@ -118,11 +118,10 @@ const ToDoListTable = ({ setEditData }) => {
       direction={"column"}
       size={{ xs: 12, sm: 12, md: 6, lg: 6 }}
       overflow={"scroll"}
-      maxHeight={"80vh"}
     >
       <Box
         sx={{
-          maxHeight: "80vh",
+          maxHeight: "70vh",
           overflowX: "hidden",
           overflowY: "scroll",
           p: 2,
