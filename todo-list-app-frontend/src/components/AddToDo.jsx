@@ -148,6 +148,7 @@ export const AddToDo = ({ editData, setEditData }) => {
             id="todo"
             name="Task"
             label="Enter ToDo"
+            required
             value={formFields.Task}
             onChange={handleChange}
             onBlur={handleBlur}
