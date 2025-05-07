@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
+const MOGODB_URI = process.env.MOGODB_URI;
 
 const conn = async (req, res) => {
   try {
-    await mongoose
-      .connect(
-        "mongodb+srv://sanyuktayadav77:Paymate_12345@todo-list-cluster.ewp7pca.mongodb.net/"
-      )
-      .then(() => {
-        console.log("Connected");
-      });
+    await mongoose.connect(MOGODB_URI).then(() => {
+      console.log("Connected");
+    });
   } catch (error) {
     console.log("Mongodb Connection Error, ", error);
   }
